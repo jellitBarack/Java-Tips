@@ -13,7 +13,7 @@ import java.util.Date;
 public class DifferenceBetweenDates {
 
 	
-	public static void diffDias(String date) {
+	public static void diffInDays(String date) {
 
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 		Calendar data1 = Calendar.getInstance();
@@ -29,7 +29,7 @@ public class DifferenceBetweenDates {
 
 			System.out.println(String.format("%s",
 					dias > 0 ? "Ainda restam " + String.valueOf(dias) + " dias para a data escolhida!"
-							: "Já se passaram " + String.valueOf(dias * (-1))
+							: "JÃ¡ se passaram " + String.valueOf(dias * (-1))
 									+ " dias entre a data escolhida e o dia de hoje!"));
 
 		} catch (Exception e) {
@@ -41,7 +41,7 @@ public class DifferenceBetweenDates {
 
 	public static void main(String[] args) {
 		
-		diffDias("32/06/2017");
+		diffInDays("32/06/2017");
 		
 	}
 
